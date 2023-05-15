@@ -1,0 +1,43 @@
+.body-palmares {
+    background-image: url(../img/messi-vs-psg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "barca        psg"
+    "argentina individual";
+    row-gap: 10px;
+}
+
+.tarjeta-barca {
+    grid-area: barca;
+    width: 50rem; height: 57%;
+}
+
+.tarjeta-psg {
+    grid-area: psg;
+    width: 50rem; height: 73%;
+}
+
+.tarjeta-argentina {
+    grid-area: argentina;
+    width: 50rem; height: 45%;
+}
+
+.tarjeta-individual {
+    grid-area: individual;
+    width: 50rem;
+}
+
+.link-mundial {
+    text-decoration: none;
+}
+
+.card {
+    margin: 5rem;
+}

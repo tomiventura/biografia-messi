@@ -1,0 +1,27 @@
+.menu-header {
+    width: 100%;
+    clear: both;
+}
+
+.navbar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    align-items: center;
+    position: sticky;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+        &:hover {
+            color: #A69256;
+        }
+}

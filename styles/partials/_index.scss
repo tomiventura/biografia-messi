@@ -1,0 +1,27 @@
+.body-index {
+    background-image: url(../img/messi-balon-de-oro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 20%
+}
+
+.titulo-inicio {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.p-inicio {
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+    background-color: black;
+    color: white;
+    opacity: 75%;
+    width: 100%;
+    font-weight: 700;
+    font-size: 2vw;
+    padding: 2rem;
+    margin-top: 8rem;
+}

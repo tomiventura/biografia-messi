@@ -1,0 +1,54 @@
+.body-trayectoria {
+    background-image: url(../img/messi-campnou.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.carrera-messi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem;
+    margin-top: 12rem;
+}
+
+.barcelona {
+    h2 {
+        color: red;
+        font-size: 25px;
+        background-color: black;
+        opacity: 70%;
+    }
+    img {
+        height: 20rem;
+    }
+}
+
+.psg {
+    h2 {
+        color: red;
+        font-size: 25px;
+        background-color: black;
+        opacity: 70%;
+    }
+    img {
+        height: 20rem;
+    }
+}
+
+.argentina {
+    h2 {
+        color: red;
+        font-size: 25px;
+        background-color: black;
+        opacity: 70%;
+    }
+    img {
+        height: 20rem;
+    }
+}

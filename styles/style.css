@@ -39,7 +39,7 @@ a:hover {
     color: #A69256;
 }
 
-.footer-logo {
+footer {
     background-color: black;
     bottom: 0;
     width: 100%;
@@ -58,7 +58,6 @@ footer img {
 .title-stats {
     margin-bottom: 2rem;
     padding-top: 1rem;
-
 }
 
 .tabla-estadisticas {
@@ -74,8 +73,7 @@ footer img {
     background-color: black;
     opacity: 80%;
     font-size: larger;
-    font-weight: 900
-    ;
+    font-weight: 900;
 }
 
 .fila-afa {
@@ -117,7 +115,7 @@ footer img {
     background-size: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    width: 100%;
 }
 
 .carrera-messi {
@@ -261,6 +259,47 @@ section div p {
     margin: 5rem;
 }
 
+.contenido-mundial {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    row-gap: 80px;
+    column-gap: 20px;
+    grid-template-areas:
+    "arabia octavos semifinal"
+    "mexico cuartos final";
+}
+
+.arabia {
+    grid-area: arabia;
+}
+
+.mexico {
+    grid-area: mexico;
+}
+
+.octavos {
+    grid-area: octavos;
+}
+
+.cuartos {
+    grid-area: cuartos;
+}
+
+.semifinal {
+    grid-area: semifinal;
+}
+
+.final {
+    grid-area: final;
+}
+
+.cuartos img {
+    height: 400px;
+}
+
+
+
 @media (max-width: 480px)
     {
         .grid-container{
@@ -301,3 +340,33 @@ section div p {
             background-repeat: no-repeat;
         }
     }
+
+@media (max-width: 480px) {
+        .body-index {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+        }
+    }
+
+@media (max-width: 480px) {
+    .carrera-messi {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenido-mundial {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .cuartos img {
+        width: 100%;
+        height: 250px;
+        background-position: center center;
+        background-size: cover;
+    }
+}

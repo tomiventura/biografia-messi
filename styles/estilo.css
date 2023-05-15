@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.menu {
+  background-image: url(../img/messi-festejo.jpg);
+}
+
+.scale-up-ver-center {
+  animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-ver-center {
+  0% {
+    transform: scaleY(0.4);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.title-stats {
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.tabla-estadisticas {
+  text-align: center;
+  width: 100%;
+  height: 43.3rem;
+}
+
+.menu-tabla {
+  color: white;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  opacity: 80%;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.fila-afa, .fila-total, .fila-barcelona, .fila-psg {
+  background-color: black;
+  font-weight: 900;
+  opacity: 80%;
+  font-size: larger;
+  color: lightskyblue;
+}
+
+.fila-psg {
+  color: #0c75d1;
+}
+
+.fila-barcelona {
+  color: #A6034F;
+}
+
+.fila-total {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  opacity: 80%;
+  position: fixed;
+  height: 51px;
+  margin-top: auto;
+}
+footer img {
+  height: 30px;
+}
+
+.menu-header {
+  width: 100%;
+  clear: both;
+}
+
+.navbar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  align-items: center;
+  position: sticky;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+a:hover {
+  color: #A69256;
+}
+
+.body-index {
+  background-image: url(../img/messi-balon-de-oro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90% 20%;
+}
+
+.titulo-inicio {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.p-inicio {
+  display: flex;
+  justify-content: center;
+  background-size: 100%;
+  background-color: black;
+  color: white;
+  opacity: 75%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 2vw;
+  padding: 2rem;
+  margin-top: 8rem;
+}
+
+.body-mundial {
+  background-image: url(../img/messi-worldcup.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenido-mundial {
+  display: flex;
+  justify-content: space-around;
+}
+
+section div p {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.contenido-mundial {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  row-gap: 80px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-template-areas: "arabia octavos semifinal" "mexico cuartos final";
+}
+
+.arabia {
+  grid-area: arabia;
+}
+
+.mexico {
+  grid-area: mexico;
+}
+
+.octavos {
+  grid-area: octavos;
+}
+
+.cuartos {
+  grid-area: cuartos;
+}
+.cuartos img {
+  height: 400px;
+}
+
+.semifinal {
+  grid-area: semifinal;
+}
+
+.final {
+  grid-area: final;
+}
+
+.body-palmares {
+  background-image: url(../img/messi-vs-psg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "barca        psg" "argentina individual";
+  row-gap: 10px;
+}
+
+.tarjeta-barca {
+  grid-area: barca;
+  width: 50rem;
+  height: 57%;
+}
+
+.tarjeta-psg {
+  grid-area: psg;
+  width: 50rem;
+  height: 73%;
+}
+
+.tarjeta-argentina {
+  grid-area: argentina;
+  width: 50rem;
+  height: 45%;
+}
+
+.tarjeta-individual {
+  grid-area: individual;
+  width: 50rem;
+}
+
+.link-mundial {
+  text-decoration: none;
+}
+
+.card {
+  margin: 5rem;
+}
+
+.body-trayectoria {
+  background-image: url(../img/messi-campnou.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.carrera-messi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem;
+  margin-top: 12rem;
+}
+
+.barcelona h2 {
+  color: red;
+  font-size: 25px;
+  background-color: black;
+  opacity: 70%;
+}
+.barcelona img {
+  height: 20rem;
+}
+
+.psg h2 {
+  color: red;
+  font-size: 25px;
+  background-color: black;
+  opacity: 70%;
+}
+.psg img {
+  height: 20rem;
+}
+
+.argentina h2 {
+  color: red;
+  font-size: 25px;
+  background-color: black;
+  opacity: 70%;
+}
+.argentina img {
+  height: 20rem;
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    display: block;
+  }
+  .tarjeta-barca {
+    width: 20rem;
+    height: 10rem;
+    margin: 1rem;
+  }
+  .tarjeta-psg {
+    width: 20rem;
+    height: 10rem;
+    margin: 1rem;
+  }
+  .tarjeta-argentina {
+    width: 20rem;
+    height: 10rem;
+    margin: 1rem;
+  }
+  .tarjeta-individual {
+    width: 20rem;
+    height: 10rem;
+    margin: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    width: 100%;
+  }
+  .menu-tabla {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 3.14rem;
+    overflow: scroll;
+  }
+  .menu {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 480px) {
+  .body-index {
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  .body-index .p-inicio {
+    height: 15rem;
+  }
+  .body-index .texto-inicio {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .carrera-messi {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .contenido-mundial {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    padding: 2rem;
+  }
+  .cuartos img {
+    width: 100%;
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+  }
+}/*# sourceMappingURL=estilo.css.map */

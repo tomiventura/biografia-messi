@@ -1,0 +1,56 @@
+.body-mundial {
+    background-image: url(../img/messi-worldcup.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenido-mundial {
+    display: flex;
+    justify-content: space-around;
+}
+
+section div p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.contenido-mundial {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    row-gap: 80px;
+    column-gap: 20px;
+    grid-template-areas:
+    "arabia octavos semifinal"
+    "mexico cuartos final";
+}
+
+.arabia {
+    grid-area: arabia;
+}
+
+.mexico {
+    grid-area: mexico;
+}
+
+.octavos {
+    grid-area: octavos;
+}
+
+.cuartos {
+    grid-area: cuartos;
+        img {
+            height: 400px;
+        }
+}
+
+.semifinal {
+    grid-area: semifinal;
+}
+
+.final {
+    grid-area: final;
+}
