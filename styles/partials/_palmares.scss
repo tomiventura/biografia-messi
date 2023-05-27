@@ -16,22 +16,28 @@
 
 .tarjeta-barca {
     grid-area: barca;
-    width: 50rem; height: 57%;
+    width: 80%; height: 57%;
+    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
 }
 
 .tarjeta-psg {
     grid-area: psg;
-    width: 50rem; height: 73%;
+    width: 80%; height: 73%;
+    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
 }
 
 .tarjeta-argentina {
     grid-area: argentina;
-    width: 50rem; height: 45%;
+    width: 80%; height: 45%;
+    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse both;
 }
 
 .tarjeta-individual {
     grid-area: individual;
-    width: 50rem;
+    width: 80%;
 }
 
 .link-mundial {

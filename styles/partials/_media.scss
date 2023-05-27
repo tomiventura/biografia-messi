@@ -1,28 +1,35 @@
-@media (max-width: 480px)
+@media (max-width: 576px)
     {
+        .navbar{
+            width: 100%;
+        }
+
         .grid-container{
             display: block;
         }
         .tarjeta-barca {
             width: 20rem; height: 10rem;
-            margin: 1rem;
+            margin: auto;
+            margin-bottom: 3rem;
         }
         .tarjeta-psg {
             width: 20rem; height: 10rem;
-            margin: 1rem;
+            margin: auto;
+            margin-bottom: 3rem;
         }
         .tarjeta-argentina {
             width: 20rem; height: 10rem;
-            margin: 1rem;
+            margin: auto;
+            margin-bottom: 3rem;
         }
         .tarjeta-individual {
             width: 20rem; height: 10rem;
-            margin: 1rem;
+            margin: auto;
             margin-bottom: 4rem;
         }
     }
 
-@media (max-width: 480px)
+@media (max-width: 576px)
     {
         .navbar {
             width: 100%;
@@ -40,12 +47,13 @@
         }
     }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
         .body-index {
             background-color: black;
             background-position: center center;
             background-repeat: no-repeat;
             background-size: auto 100%;
+            margin-bottom: 3rem;
             .p-inicio {
                 height: 15rem;
             }
@@ -56,14 +64,37 @@
         }
     }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+    .body-trayectoria {
+        background: linear-gradient(82deg, #d9043d, #034c8c, #d9bc66);
+        background-size: 600% 600%;
+    
+        -webkit-animation: Animacion-gradiente 23s ease infinite;
+        animation: Animacion-gradiente 23s ease infinite;
+    }
+    
+    @-webkit-keyframes Animacion-gradiente {
+        0%{background-position:0% 48%}
+        50%{background-position:100% 53%}
+        100%{background-position:0% 48%}
+    }
+    @keyframes Animacion-gradiente {
+        0%{background-position:0% 48%}
+        50%{background-position:100% 53%}
+        100%{background-position:0% 48%}
+    }
         .carrera-messi {
             display: flex;
-            flex-direction: column;
-    }
+            flex-direction: column;}
+            .barcelona {
+                margin-bottom: 5rem;
+            }
+            .psg {
+                margin-bottom: 5rem;
+            }
     }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .contenido-mundial {
         display: flex;
         flex-direction: column;
