@@ -25,27 +25,31 @@ section div p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+    margin-top: auto;
     margin-bottom: 5rem;
     margin-right: 2rem;
     grid-template-areas:
-    "arabia octavos semifinal"
-    "mexico cuartos final";
+    "arabia mexico octavos"
+    "cuartos semifinal final";
 }
 
 .arabia {
     grid-area: arabia;
+    height: 45%;
     margin-top: 5rem;
 }
 
 .mexico {
     grid-area: mexico;
+    height: 30%;
 }
 
 .octavos {
     grid-area: octavos;
     margin-top: 5rem;
+    height: 30%;
 }
 
 .cuartos {
@@ -58,8 +62,10 @@ section div p {
 .semifinal {
     grid-area: semifinal;
     margin-top: 5rem;
+    height: 50%;
 }
 
 .final {
     grid-area: final;
+    height: 75%;
 }

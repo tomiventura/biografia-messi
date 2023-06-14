@@ -1,0 +1,100 @@
+.card {
+    color: #1b1b1b;
+    width: 80%;
+    height: 254px;
+    position: relative;
+    outline: 6px solid #A69256;
+    border-radius: 8px;
+    line-height: 150%;
+    padding: 16px;
+    background: #A2D4F2;
+    background-blend-mode: multiply;
+    background: linear-gradient(to top, #A2D4F2, #055BA6);
+    transition: background-color 1s ease-in-out;
+    overflow: hidden;
+}
+
+.card-front {
+    bottom: 16px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.card-back {
+    transform: translateX(120%);
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1b1b1b;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    border-radius: 50%;
+    height: 2px;
+    margin: 2px auto;
+    background-color: #1b1b1b;
+}
+
+.card:hover {
+    background-color: #1b1b1b25;
+    :hover .card-front {
+        transform: translateX(-100%);
+    }
+    :hover .card-front {
+        transform: translateX(-100%);
+    }
+}
+
+.card:hover .card-front {
+    transform: translateX(-100%);
+}
+
+.card:hover .card-back {
+    transform: translateX(0);
+}
+
+.card-mundial {
+    margin: auto;
+    padding: 1rem;
+    width: 80%;
+    height: 254px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow: auto;
+    background: rgb(7,252,255);
+    background: rgb(116,98,74);
+background: linear-gradient(0deg, rgba(116,98,74,1) 0%, rgba(166,122,68,1) 48%, rgba(5,5,5,1) 100%);
+    opacity: 80%;
+    font-size: large;
+        p {
+            color: white;
+        }
+}
+
+.arabia, .mexico, .octavos, .semifinal, .final {
+    img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+.cuartos {
+    img {
+        width: 100%;
+        margin-top: 2rem;
+        height: 90%;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+

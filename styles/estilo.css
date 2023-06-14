@@ -178,25 +178,29 @@ section div p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+  -moz-column-gap: 0px;
+  column-gap: 0px;
+  margin-top: auto;
   margin-bottom: 5rem;
   margin-right: 2rem;
-  grid-template-areas: "arabia octavos semifinal" "mexico cuartos final";
+  grid-template-areas: "arabia mexico octavos" "cuartos semifinal final";
 }
 
 .arabia {
   grid-area: arabia;
+  height: 45%;
   margin-top: 5rem;
 }
 
 .mexico {
   grid-area: mexico;
+  height: 30%;
 }
 
 .octavos {
   grid-area: octavos;
   margin-top: 5rem;
+  height: 30%;
 }
 
 .cuartos {
@@ -209,10 +213,12 @@ section div p {
 .semifinal {
   grid-area: semifinal;
   margin-top: 5rem;
+  height: 50%;
 }
 
 .final {
   grid-area: final;
+  height: 75%;
 }
 
 .body-palmares {
@@ -231,22 +237,22 @@ section div p {
 
 .tarjeta-barca {
   grid-area: barca;
-  width: 80%;
-  height: 57%;
+  width: 100%;
+  height: 2000px;
   animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate-reverse both;
 }
 
 .tarjeta-psg {
   grid-area: psg;
-  width: 80%;
-  height: 73%;
+  width: 100%;
+  height: 2500px;
   animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate-reverse both;
 }
 
 .tarjeta-argentina {
   grid-area: argentina;
   width: 80%;
-  height: 45%;
+  height: 800px;
   animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate-reverse both;
 }
 
@@ -261,6 +267,114 @@ section div p {
 
 .card {
   margin: 5rem;
+}
+
+.img-psg {
+  height: 80%;
+}
+
+.img-arg {
+  height: 90%;
+}
+
+.img-ind {
+  height: 45%;
+}
+
+.card {
+  color: #1b1b1b;
+  width: 80%;
+  height: 254px;
+  position: relative;
+  outline: 6px solid #A69256;
+  border-radius: 8px;
+  line-height: 150%;
+  padding: 16px;
+  background: #A2D4F2;
+  background-blend-mode: multiply;
+  background: linear-gradient(to top, #A2D4F2, #055BA6);
+  transition: background-color 1s ease-in-out;
+  overflow: hidden;
+}
+
+.card-front {
+  bottom: 16px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.card-back {
+  transform: translateX(120%);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1b1b1b;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-radius: 50%;
+  height: 2px;
+  margin: 2px auto;
+  background-color: #1b1b1b;
+}
+
+.card:hover {
+  background-color: rgba(27, 27, 27, 0.1450980392);
+}
+.card:hover :hover .card-front {
+  transform: translateX(-100%);
+}
+.card:hover :hover .card-front {
+  transform: translateX(-100%);
+}
+
+.card:hover .card-front {
+  transform: translateX(-100%);
+}
+
+.card:hover .card-back {
+  transform: translateX(0);
+}
+
+.card-mundial {
+  margin: auto;
+  padding: 1rem;
+  width: 80%;
+  height: 254px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  overflow: auto;
+  background: rgb(7, 252, 255);
+  background: rgb(116, 98, 74);
+  background: linear-gradient(0deg, rgb(116, 98, 74) 0%, rgb(166, 122, 68) 48%, rgb(5, 5, 5) 100%);
+  opacity: 80%;
+  font-size: large;
+}
+.card-mundial p {
+  color: white;
+}
+
+.arabia img, .mexico img, .octavos img, .semifinal img, .final img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.cuartos img {
+  width: 100%;
+  margin-top: 2rem;
+  height: 90%;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .body-trayectoria {
@@ -329,31 +443,38 @@ section div p {
     width: 100%;
   }
   .grid-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
   .tarjeta-barca {
-    width: 20rem;
-    height: 10rem;
-    margin: auto;
+    width: 80%;
+    margin-right: auto;
     margin-bottom: 3rem;
   }
   .tarjeta-psg {
-    width: 20rem;
-    height: 10rem;
+    width: 80%;
     margin: auto;
     margin-bottom: 3rem;
+    margin-left: 5rem;
   }
   .tarjeta-argentina {
-    width: 20rem;
-    height: 10rem;
+    width: 80%;
     margin: auto;
     margin-bottom: 3rem;
+    margin-left: 5rem;
   }
   .tarjeta-individual {
-    width: 20rem;
-    height: 10rem;
+    width: 80%;
+    height: 5rem;
     margin: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+  }
+  .body-palmares {
+    background-color: black;
   }
 }
 @media (max-width: 576px) {
@@ -366,6 +487,7 @@ section div p {
     padding: 1rem;
     margin-bottom: 3.14rem;
     overflow: scroll;
+    font-size: small;
   }
   .menu {
     background-size: cover;
@@ -420,13 +542,10 @@ section div p {
   .contenido-mundial {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
     padding: 2rem;
+    height: 2000px;
   }
-  .cuartos img {
-    width: 100%;
-    height: 250px;
-    background-position: center center;
-    background-size: cover;
+  .arabia, .mexico, .octavos, .cuartos, .semifinal, .final {
+    margin: 1rem;
   }
 }/*# sourceMappingURL=estilo.css.map */
